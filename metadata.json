@@ -1,0 +1,32 @@
+{
+  "id": "swap-test",
+  "name": "SWAP Test",
+  "category": "simulation",
+  "description": "Measure |\u27e8\u03c8|\u03c6\u27e9|\u00b2 between two quantum states using a Fredkin (controlled-SWAP) gate.",
+  "long_description": "The SWAP test non-destructively estimates the overlap |\u27e8\u03c8|\u03c6\u27e9|\u00b2 of two quantum states. An ancilla qubit in superposition controls a SWAP between the two state registers. P(ancilla=1) = (1 - |\u27e8\u03c8|\u03c6\u27e9|\u00b2)/2. For identical states: P(1)=0, for orthogonal: P(1)=0.5. This circuit tests |\u03c8\u27e9=|0\u27e9 vs |\u03c6\u27e9=|+\u27e9, so |\u27e80|+\u27e9|\u00b2=0.5 \u2192 P(1) = 0.25.",
+  "difficulty": "intermediate",
+  "qubit_count": 3,
+  "clbit_count": 1,
+  "gate_count": 4,
+  "depth": 4,
+  "tags": [
+    "swap-test",
+    "state-overlap",
+    "fidelity",
+    "ancilla"
+  ],
+  "circuit_formats": [
+    "qasm2"
+  ],
+  "source_file": "circuit.qasm",
+  "expected_output": "P(1) \u2248 0.25 (|\u27e80|+\u27e9|\u00b2 = 0.5 \u2192 P(1) = (1-0.5)/2 = 0.25)",
+  "references": [
+    {
+      "title": "Buhrman et al. (2001). Quantum Fingerprinting. PRL 87, 167902",
+      "url": "https://doi.org/10.1103/PhysRevLett.87.167902"
+    }
+  ],
+  "author": "OpenQC Community",
+  "license": "MIT",
+  "version": "1.0.0"
+}
