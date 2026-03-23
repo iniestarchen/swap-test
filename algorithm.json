@@ -1,0 +1,29 @@
+{
+  "slug": "swap-test",
+  "name": "SWAP Test",
+  "version": "1.0.0",
+  "author": "iniestarchen",
+  "license": "Apache-2.0",
+  "description": "Measure state overlap between two quantum states using a Fredkin gate.",
+  "industries": [
+    "education",
+    "ml"
+  ],
+  "techniques": [
+    "gate"
+  ],
+  "difficulty": "beginner",
+  "computation_model": "gate",
+  "algorithm_type": "circuit",
+  "qubit_count": 3,
+  "tags": [
+    "swap-test",
+    "fidelity",
+    "state-comparison"
+  ],
+  "access": "open",
+  "source": "official",
+  "metadata": {
+    "year_introduced": 2001
+  }
+}
